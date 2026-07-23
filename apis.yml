@@ -1,7 +1,26 @@
 aid: appconomy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/appconomy.png
 name: appconomy
-description: appconomy is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Appconomy was a mobile-commerce platform company, founded in 2010 and dual-headquartered
+  in Austin, Texas and Shanghai, China, that let brands, retailers, service providers, and mobile
+  carriers add commerce functionality (daily deals, coupons, loyalty and rewards, mobile gifting, and
+  merchant app generation for marketplaces such as Taobao) to their mobile apps. It was venture-backed
+  with strategic investors including Qiming Venture Partners (lead of a $10M Series A), True Ventures,
+  Neusoft Holdings, and WTI. The company is now permanently closed and publishes no live developer
+  surface. The appconomy.cn domain does not resolve, appconomy.com returns 404, and no public API,
+  documentation, developer portal, SDK, or /.well-known/ endpoint could be found. This profile is
+  retained as a historical portfolio-graph record rather than an active API provider.
 url: https://raw.githubusercontent.com/api-evangelist/appconomy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,19 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: closed
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Mobile
+- Commerce
+- Retail
+- Loyalty
+- Mobile Apps
+- China
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,8 @@ maintainers:
 common:
 - type: Website
   url: https://appconomy.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
